@@ -1,0 +1,19 @@
+- name: copy test file to other machine
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: copy test file
+      copy:
+        src: files/test.txt
+        dest: /home/student/ansibletest/files/hamdouni.txt
+        mode: 777
+    - name: stop pkg
+      become: true
+      service:
+        name: postgresql
+        state: stopped
+    - name: uninstall package
+      become: true
+      apt:
+        name: postgresql 
+        state: absent

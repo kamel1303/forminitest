@@ -1,0 +1,30 @@
+all:
+  hosts: 
+    student1:
+      access_ip: 192.168.20.102
+      ansible_host: 192.168.20.102
+      ansible_ssh_pass: VMware1!
+      ansible_ssh_user: student
+      ip: 192.168.20.102
+      ansible_sudo_pass: VMware1!
+    student2:
+      access_ip: 192.168.20.89
+      ansible_host: 192.168.20.89
+      ansible_ssh_pass: VMware1!
+      ansible_ssh_user: student
+      ip: 192.168.20.89
+      ansible_sudo_pass: VMware1!
+    student4:
+      access_ip: 192.168.20.129
+      ansible_host: 192.168.20.129
+      ansible_ssh_pass: VMware1!
+      ansible_ssh_user: student
+      ip: 192.168.20.129
+      ansible_sudo_pass: VMware1!
+    student5:
+      access_ip: 192.168.20.105
+      ansible_host: 192.168.20.105
+      ansible_ssh_pass: VMware1!
+      ansible_ssh_user: student
+      ip: 192.168.20.105
+      ansible_sudo_pass: VMware1!
